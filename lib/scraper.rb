@@ -9,7 +9,8 @@ class Scraper
     student = []
     results.css("div.roster-cards-container").each do |card|
     card.css(".student-card a").each do |student|
-    student = student.new
+    student = Student.new
+    
     binding.pry
     results
     puts "testing pry"
