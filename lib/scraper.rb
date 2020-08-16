@@ -24,7 +24,7 @@ end
     url = Nokogiri::HTML(open(profile_url))
     profile_info = {}
     url.css("vitals-container").each do |card|
-    card.css(".social-icon-container")  
+    card.css(".social-icon-container").each do   
     
   end
 
