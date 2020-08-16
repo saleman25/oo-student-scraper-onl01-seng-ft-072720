@@ -4,11 +4,11 @@ require 'pry'
 
 class Scraper
 
-
+student = []
 
   def self.scrape_index_page(index_url)
     results = Nokogiri::HTML(open(index_url))
-    student_info = []
+    student_info = {}
     results.css("div.roster-cards-container").each do |card|
     card.css(".student-card a").each do |student|
     student_info[:url] = "#{student.attr('href')}"
