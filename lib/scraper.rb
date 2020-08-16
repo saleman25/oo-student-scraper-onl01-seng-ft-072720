@@ -11,7 +11,7 @@ class Scraper
     card.css(".student-card a").each do |student|
     student = Student.new
     student_name = card.css(".student-card a").first.css("h4").text
-    student_location = card.css(".student-card a").first.css("")
+    student_location = card.css(".student-card a").first.css("p").text
     binding.pry
     results
     puts "testing pry"
