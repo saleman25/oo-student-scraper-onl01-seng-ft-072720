@@ -9,9 +9,9 @@ class Scraper
     student = []
     results.css("div.roster-cards-container").each do |card|
     card.css(".student-card a").each do |student|
-    student = Student.new
-    student_name = card.css("h4").text
-    student_location = card.css("p").text
+    student_profile = "#{student.attr('href')}"
+    student_name = student.css("h4").text
+    student_location = student.css("p").text
     binding.pry
     results
     puts "testing pry"
