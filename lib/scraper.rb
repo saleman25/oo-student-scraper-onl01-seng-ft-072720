@@ -12,11 +12,10 @@ class Scraper
     student_profile = "#{student.attr('href')}"
     student_name = student.css("h4").text
     student_location = student.css("p").text
-    binding.pry
-    results
-    puts "testing pry"
+     student << {name: student_name, location: student_location, profile_url: student_profile_link}
   end
 end
+student
 end 
 
   def self.scrape_profile_page(profile_url)
