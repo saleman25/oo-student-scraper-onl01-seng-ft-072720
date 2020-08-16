@@ -7,7 +7,7 @@ class Scraper
   def self.scrape_index_page(index_url)
     results = Nokogiri::HTML(open(index_url))
     student = []
-    student_info= results.css(".student-card a")
+    results.css(".student-card a")
     binding.pry
     results
     puts "testing pry"
