@@ -14,6 +14,7 @@ class Scraper
     puts "testing pry"
   end
 end
+end 
 
   def self.scrape_profile_page(profile_url)
     
