@@ -8,7 +8,7 @@ class Scraper
     results = Nokogiri::HTML(open(index_url))
     student = []
     results.css("div.roster-cards-container").each do |card|
-      card.css(".student-card a")
+      card.css(".student-card a").each do |
     binding.pry
     results
     puts "testing pry"
