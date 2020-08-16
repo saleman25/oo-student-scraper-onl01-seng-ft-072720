@@ -23,7 +23,8 @@ end
   def self.scrape_profile_page(profile_url)
     url = Nokogiri::HTML(open(profile_url))
     profile_info = {}
-    url.css("social-icon-container")
+    url.css("social-icon-container").each do |card|
+    card.css()  
     
   end
 
