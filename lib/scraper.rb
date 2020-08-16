@@ -10,7 +10,7 @@ class Scraper
     results.css("div.roster-cards-container").each do |card|
     card.css(".student-card a").each do |student|
     student = Student.new
-    student.name = card.css(".student-card a")(h4).text
+    student.name = card.css(".student-card a").first.css(h4).text
     binding.pry
     results
     puts "testing pry"
