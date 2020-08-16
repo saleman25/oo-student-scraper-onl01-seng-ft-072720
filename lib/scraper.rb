@@ -25,7 +25,7 @@ end
     profile_info = {}
     url.css("vitals-container").each do |card|
     card.css(".social-icon-container").each do |link|
-    
+    student
     
   end
 
